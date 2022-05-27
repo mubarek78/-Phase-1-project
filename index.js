@@ -1,4 +1,3 @@
-
 var inputvalue = document.querySelector('#city')
 var btn = document.querySelector('#add-city');
 var city = document.querySelector('#cityoutput')
@@ -14,11 +13,7 @@ let api;
 
 
 locationBtn.addEventListener("click", () =>{
-    if(navigator.geolocation){
-        navigator.geolocation.getCurrentPosition(onSuccess, onError);
-    }else{
-        alert("Your browser not support geolocation api");
-    }
+     navigator.geolocation.getCurrentPosition(onSuccess);
 });
 
 function onSuccess(position){
@@ -26,10 +21,7 @@ function onSuccess(position){
     api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apik}`;
     fetchData(api);
 }
-function onError(error){
-    infoTxt.innerText = error.message;
-    infoTxt.classList.add("error");
-}
+
 
 // I collect all the information by the help of fetch method
 
