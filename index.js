@@ -7,6 +7,7 @@ var pre = document.querySelector('#pre')
 var hum = document.querySelector('#hum')
 var wind = document.querySelector('#wind')
 var locationBtn = document.querySelector('#btn')
+var iconImg = document.querySelector('#weather-icon')
 
 apik = "25c3942c764f3df2f802e6ce042c5d57"
 let api;
@@ -53,6 +54,7 @@ function fetchData(api){
       hum.innerHTML = `Humidity: <span>${humidity} %</span>`
       description.innerHTML = `Sky : <span>${descrip}<span>`
       wind.innerHTML = `Wind Speed: <span>${windspeed} M/s<span>`
+      iconImg.src = `http://openweathermap.org/img/wn/${icon}@2x.png`;
 
   })
 
