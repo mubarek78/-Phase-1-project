@@ -10,10 +10,7 @@
   :focus {
     outline: none;
   }
-  html, body {
-    height: 100%;
-    width: 100%;
-  }
+ 
   body {
     color: #fff;
     font-family: 'Alegreya Sans', sans-serif;
@@ -22,16 +19,16 @@
     letter-spacing: 0.05rem;
     line-height: 1.5;
     text-align: center;
-    background: linear-gradient(90deg, #754d8b 0%, #4e5992 100%);
+    background: linear-gradient(90deg, #3f4179 0%, #4e6f92 100%);
   }
  
  
   footer {
     color: rgba(255,255,255,0.6);
-    font-size: 0.8rem;
-    letter-spacing: 0.07em;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
     line-height: 2;
-    padding: 30px 0;
+    padding: 28px 0;
     width: 100%;
   }
   #lastUpdated {
@@ -49,7 +46,7 @@
     Containers
   -----------------*/
   .wrapper {
-    color: #fff;
+    color: rgb(202, 202, 202);
     overflow: auto;
     width: 100%;
   }
@@ -72,12 +69,12 @@
     
   }
   #locateBtn, #unitBtn, #city, #submitBtn{
-    background: none;
+    background: transparent;
     border: 1px solid rgba(255,255,255,0.25);
     border-radius: 50%;
     color: #fff;
     height: 40px;
-    transition: background 1s ease-in-out, border 0.2s ease-in-out;
+    transition: background 1s ease-in-out, border 0.5s ease-in-out;
     width: 40px;
   }
   #city{
@@ -86,11 +83,11 @@
     padding: 1.5%;
 
 }
-  /* #locateBtn.on, #unitBtn.on {
-    background: rgba(255,255,255,0.25);
-  } */
+
   #locateBtn:focus, #locateBtn:hover, #unitBtn:focus, #unitBtn:hover, #submitBtn:focus, #submitBtn:hover{
-    border: 1px solid rgba(255,255,255,0.75);
+    border: 1px solid rgba(255,255,254,0.95);
+    background: #fff;
+    color: #3f4179;
   }
   #locateBtn {
     margin-right: 10px;
