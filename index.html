@@ -1,39 +1,72 @@
-
-
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Weather app</title>
-    <link rel="stylesheet" href="./styles.css">
+  <title>Weather App</title>
+ 
+  <!-- Font Awesome -->
+  <script type="text/javascript" src="https://use.fontawesome.com/20df5cf3d4.js"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-           
-            <div class="input">
-                <input type="text" placeholder="Please enter city name" id="city">
-                <input type="submit" value="Submit" id="add-city">
-              <div class="separator"></div>
-              <button id='btn'>Current Location</button>
-            </div>
-            
-    
-            <div class="display">
-                <div class="display-wrapper">
-                    <h2 id="cityoutput"></h2>
-                    <p id="description"></p>
-                    <p id="temp"></p>
-                    <img id="weather-icon" src="">
-                    <p id="pre"></p>
-                    <p id="hum"></p>
-                    <p id="wind"></p>
+ 
+  <!-- Current Weather -->
+  <div id="current" class="wrapper">
+    <nav>
+      <input type="text" placeholder="Please enter city name" id="city">
+      <button id="submitBtn">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </button>
+      <button id="locateBtn">
+        <i class="fa fa-location-arrow" aria-hidden="true"></i>
+      </button>
+      <button id="unitBtn" data-units="f">c</button>
+    </nav>
 
-                </div>
-            </div>
-        
+    <h1 class="location">Chicago, IL</h1>
+    <h2 class="date">Sunday, January 1, 2017</h2>
+    <div class="weatherIcon">
+        <img id="icon" src="icons/clear.svg" alt="Weather Icon">
     </div>
-    <script src="./index.js"></script>
+    <p class="temp">15</p>
+    <p class="conditions">Suny</p>
+  </div>
+
+  <!-- Details -->
+  <div id="details" class="wrapper">
+    <div class="container">
+      <h3 class="detail">Humidity</h3>
+      <div class="weatherIcon">
+          <img id="icon" src="icons/hum.png" alt="Weather Icon">
+      </div>
+      <p class="conditions h">10.20  M/S</p>
+    </div>
+
+    <div class="container">
+      <h3 class="detail">Pressure</h3>
+      <div class="weatherIcon">
+          <img id="icon" src="icons/pre.png" alt="Weather Icon">
+      </div>
+      <p class="conditions p">1011 HpH</p>
+    </div>
+
+    <div class="container">
+      <h3 class="detail">Wind speed</h3>
+      <div class="weatherIcon">
+          <img id="icon" src="icons/win.png" alt="Weather Icon">
+      </div>
+      <p class="conditions w">12.3 m/s</p>
+    </div>
+
+  </div>
+  <footer>
+    <p id="lastUpdated">Last updated at 12:00pm</p>
+    <p>Created by <a href="http://mubarekshifa.com/" title="Visit Portfolio Site" target="_blank">Mubarek Melkto</a> | Weather data from <a href="https://openweathermap.org" title="openweathermap.org" target="_blank">openweathermap</a></p>
+  </footer>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
