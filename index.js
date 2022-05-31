@@ -1,8 +1,8 @@
 
-var locationBtn = document.querySelector('#locateBtn')
-var city = document.querySelector('.location')
-let inputvalue = document.querySelector('#city')
-var btn = document.querySelector('#submitBtn')
+var locationBtn = document.querySelector('#locateBtn');
+var city = document.querySelector('.location');
+let inputvalue = document.querySelector('#city');
+var btn = document.querySelector('#submitBtn');
 var date = document.querySelector(".date")
 var wIcon = document.querySelector("#icon")
 var temp = document.querySelector('.temp')
