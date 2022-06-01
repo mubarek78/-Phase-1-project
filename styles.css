@@ -191,11 +191,7 @@
     }
   
   }
-  @media (min-width: 550px) {
-    body {
-        background-color: tan;
-      }
-     
+  @media (min-width: 550px) {  
       #city{
           width: 290px;
       }
