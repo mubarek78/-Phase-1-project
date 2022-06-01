@@ -90,7 +90,7 @@ function fetchData(api){
       temp.innerHTML = `${ Math.floor(tempature)}`
       pre.innerHTML = `${pressure} hPa`
       hum.innerHTML = `${humidity}  %`
-      wind.innerHTML = `${windspeed} m/s`
+      wind.innerHTML = `${windspeed} Km/h`
       lastUpdated.innerHTML =` Last updated at ${now.toLocaleTimeString()}`
       inputvalue.value = ''
       
