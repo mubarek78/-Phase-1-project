@@ -229,9 +229,6 @@ a:link {
     footer { font-size: 0.9rem; }
   }
   @media (min-width: 880px) {
-    body {
-        background-color: blueviolet;
-      }
     #current {
       font-size: 1.5rem;
     }
