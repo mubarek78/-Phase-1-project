@@ -35,12 +35,6 @@
     color: #fff;
     padding: 5% 0;
   }
-  #lastUpdated:before {
-    content: '-- ';
-  }
-  #lastUpdated:after {
-    content: ' --';
-  }
   
   /*----------------
     Containers
