@@ -35,6 +35,10 @@
     color: #fff;
     padding: 5% 0;
   }
+a:link {
+  text-decoration: none;
+    color: #aadf66;
+}
   
   /*----------------
     Containers
