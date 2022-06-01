@@ -77,7 +77,7 @@ function fetchData(api){
         wIcon.src = "icons/haze.svg";
     }else if(descrip == 'overcast clouds' || 'broken clouds'){
         wIcon.src = "icons/cloud.svg";
-    }else if(descrip == 'rain'){
+    }else if(descrip == 'rain' || 'LIGHT RAIN'){
         wIcon.src = "icons/rain.svg";
     }
 
