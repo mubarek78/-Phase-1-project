@@ -185,11 +185,7 @@
   /*----------------
     Media Queries
   -----------------*/
-  @media (min-width: 375px) {
-    body {
-        background-color: olive;
-      }
-   
+  @media (min-width: 375px) {  
     #city{
         width: 240px;
     }
