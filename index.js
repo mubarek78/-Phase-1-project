@@ -1,16 +1,16 @@
 
-var locationBtn = document.querySelector('#locateBtn');
-var city = document.querySelector('.location');
-let inputvalue = document.querySelector('#city');
-var btn = document.querySelector('#submitBtn');
-var date = document.querySelector(".date");
-var wIcon = document.querySelector("#icon");
-var temp = document.querySelector('.temp');
-var description = document.querySelector('.conditions');
-var hum = document.querySelector('.h');
-var wind = document.querySelector('.w')
-var pre = document.querySelector('.p')
-var lastUpdated = document.querySelector('#lastUpdated')
+let locationBtn = document.querySelector('#locateBtn'),
+ city = document.querySelector('.location'),
+ inputvalue = document.querySelector('#city'),
+ btn = document.querySelector('#submitBtn'),
+ date = document.querySelector(".date"),
+ wIcon = document.querySelector("#icon"),
+ temp = document.querySelector('.temp'),
+ description = document.querySelector('.conditions'),
+ hum = document.querySelector('.h'),
+ wind = document.querySelector('.w'),
+ pre = document.querySelector('.p'),
+ lastUpdated = document.querySelector('#lastUpdated')
 
 
 let apik = "25c3942c764f3df2f802e6ce042c5d57"
